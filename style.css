@@ -1,0 +1,138 @@
+/* GLOBAL STYLES AND RESETS */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #c4c4c4; /* To help display component boundaries */
+}
+body, input {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+button {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+.bgGreen {
+    background-color: #45D695;
+    color: white;
+}
+.textGreen {
+    color: #45D695;
+    font-weight: 600;
+}
+.avatarSml { width: 30px; }
+.avatarMed {
+    width: 45px;
+    position: absolute;
+}
+/* FONT SIZING AND WEIGHT */
+.textBold {
+    font-weight: 700;
+    font-size: 15px;
+}
+.textSemiBold {
+    font-weight: 600;
+    font-size: 14px;
+}
+.textRegularLrg {
+    font-weight: 400;
+    font-size: 14px;
+}
+.textRegularSml {
+    font-weight: 400;
+    font-size: 12px;
+}
+/* PLACEHOLDERS */
+input::-webkit-input-placeholder { color: #999999; }
+/* Firefox 18- */
+input:-moz-placeholder { color: #999999; }
+ /* Firefox 19+ */
+input::-moz-placeholder { color: #999999; }
+ input:-ms-input-placeholder { color: #999999; }
+
+/* Comment Input */
+.commAreaWrap {
+    max-width: 793px;
+    margin: 50px auto 0 auto;
+    background-color: #ffffff;
+}
+.commInpWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+.commInpWrap .commInp {
+    width: 100%;
+    margin: 0 15px;
+    background-color: #FAFAFA;
+    border: 1px solid #D5D5D5;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+.postCommBtn {
+    width: 100%;
+    max-width: 82px;
+    height: 25px;
+    border-radius: 60px;
+}
+
+/* Comments and Replies */
+.commWrap {
+    border-top: 1px solid #E7EAEF;
+    padding: 20px 15px;
+}
+.commReplyWrap {
+    margin-left: 55px;
+    padding-top: 20px;
+}
+.postInfo {
+    display: inline-block;
+    margin-left: 55px;
+}
+.timePosted {
+    color: #999999;
+}
+.userComm { margin: 5px 0; }
+
+.commAction {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+}
+.commAction:hover {
+    color: #45D695;
+}
+.commAction svg {
+    font-size: 15px;
+    fill: #999999;/* For IE */
+}
+.commLike {
+    margin-right: 10px;
+}
+.commAction svg, .userName {
+    margin-right: 5px;
+}
+/* Load More */
+.loadMore {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E7EAEF;
+}

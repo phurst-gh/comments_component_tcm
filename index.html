@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Coaching Manual Test 2 - Comments Component</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="#" />
+        <meta name="author" content="#" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div class="commAreaWrap">
+            <!-- Write a comment and post it -->
+            <div class="commInpWrap">
+                <img class="avatarSml" src="comm_avatar.png" alt="User account avatar" />
+                <label for="commInp"></label>
+                <input type="text" class="commInp textRegularLrg" id="commInp" name="commInp" placeholder="Write a comment" />
+                <button class="btn postCommBtn bgGreen">Comment</button>
+            </div>
+
+            <div class="commWrapAll">
+                <!-- Posted comment -->
+                <div class="commWrap">
+                    <img class="avatarMed" src="comm_avatar.png" alt="User account avatar" />
+                    <div class="postInfo">
+                        <span class="userName textGreen textSemiBold">David Smith</span>
+                        <span class="timePosted textRegularSml">3 hours ago</span>
+                        <p class="userComm textRegularLrg">Thought this worked well last night, we should do it again next week.</p>
+                        <!-- Posted comment actions -->
+                        <div class="commActionWrap">
+                            <div class="commAction commLike">
+                                <!-- Icons not appearing in IE, seems to be something to do with IE11 and firewalls -->
+                                <i class="fas fa-thumbs-up"></i>
+                                <span class="likeCount">Like</span>
+                            </div>
+                            <div class="commAction commReply">
+                                <i class="fas fa-reply"></i>
+                                Reply
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comment reply -->
+                    <div class="commReplyWrap">
+                        <img class="avatarMed" src="comm_avatar.png" alt="User account avatar" />
+                        <div class="postInfo">
+                            <span class="userName textGreen textSemiBold">Emma Trello</span>
+                            <span class="timePosted textRegularSml">1 hour ago</span>
+                            <p class="userComm textRegularLrg">Agreed! The players responded really well to it.</p>
+                            <!-- Posted comment actions -->
+                            <div class="commActionWrap">
+                                <div class="commAction commLike">
+                                    <!-- Icons not appearing in IE, seems to be something to do with IE11 and firewalls -->
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span class="likeCount">Like</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+<!--
+                <div class="commWrap">
+                    <img class="avatarMed" src="comm_avatar.png" alt="User account avatar" />
+                    <div class="postInfo">
+                        <span class="userName textGreen textSemiBold">David Smith</span>
+                        <span class="timePosted textRegularSml">7 hours ago</span>
+                        <p class="userComm textRegularLrg">Thought this worked well last night, we should do it again next week.</p>
+                        <div class="commActionWrap">
+                            <div class="commAction commLike">
+                                <i class="fas fa-thumbs-up"></i>
+                                3 Likes
+                            </div>
+                            <div class="commAction commReply">
+                                <i class="fas fa-reply"></i>
+                                Reply
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+            <div class="loadMore">
+                <span class="textGreen textSemiBold">Load More</span>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
