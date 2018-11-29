@@ -1,4 +1,4 @@
-// I would prefer to make this more OOP but with the script only being small it felt
+// I would prefer to write more OOP and utilise modules but with the script only being small it felt
 // cleaner to do it through functions.
 
 function buildComment() {
@@ -18,10 +18,12 @@ function buildComment() {
     postFinal = postFinal.replace('%timePlacehold%', timePosted);
 
     //4. Update UI with new post
-    document.querySelector('.commWrapAll').insertAdjacentHTML('beforeend', postFinal);
-
+    if (newComment !== '') {
+        document.querySelector('.commWrapAll').insertAdjacentHTML('beforeend', postFinal);
+    };
+    
     //5. Clear Input and set focus
-    clearPostInp()
+    clearPostInp();
 };
 
 function clearPostInp() {
@@ -31,7 +33,7 @@ function clearPostInp() {
 
 //Event Listeners
 document.querySelector('.postCommBtn').addEventListener('click', buildComment);
-document.querySelector('.postCommBtn').addEventListener('keypress', function(event) {
+document.addEventListener('keypress', function(event) {
     if (event.keyCode === 13 || event.which === 13) {
         buildComment();
     };
