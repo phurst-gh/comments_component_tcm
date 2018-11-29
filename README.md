@@ -4,9 +4,9 @@
 
 - First script is built as simple as I could whilst keeping things clean.
 	
-- Second script utilises OOP.
+- Second script utilises OOP (time taken to change code to OOP, 1 hour 40minutes).
       
-2. The OOP script needs activating in the index.html (remove comment tags, add to alternate script)
+2. The OOP script needs activating in the index.html (remove comment tags, add to alternate script).
   
 3. OOP/modules are quite new to me so I may be a little off here. I'm learning fast and personally
     much prefer this more secure approach to programming. The script needed here felt a little 
