@@ -1,8 +1,10 @@
 # comments_component_tcm
 
 1. There are 2 scripts that generate comments:
-      -First script is built as simple as I could whilst keeping things clean.
-      -Second script utilises OOP.
+
+- First script is built as simple as I could whilst keeping things clean.
+	
+- Second script utilises OOP.
       
 2. The OOP script needs activating in the index.html (remove comment tags, add to alternate script)
   
